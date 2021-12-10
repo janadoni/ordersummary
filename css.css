@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Inter:wght@100&family=Lexend+Deca:wght@100&family=Outfit:wght@100&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+
+
+   font-family: 'Inter', sans-serif;
+
+    font-family: 'Lexend Deca', sans-serif;
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+:root{
+    --first:hsl(225, 100%, 94%);
+    --second: hsl(245, 75%, 52%);
+    --thrid: hsl(225, 100%, 98%);
+    --four: hsl(224, 23%, 55%);
+    --five: hsl(223, 47%, 23%);
+}
+body{
+    background:url(pattern-background-desktop.svg),var(--first);
+    width: 100%;
+    height: 100vh;
+   background-repeat: no-repeat;
+}
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.order .order_container{
+    display: flex;
+    flex-direction: column;
+    background:var(--thrid);
+  border: none;
+    outline: none;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4rem 5rem rgba(0,0,0,.1);
+}
+.order_container .image img{
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ 
+
+}
+.order_container .content{
+    margin: 50px;
+    text-align: center;
+
+}
+.order_container .content h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.order_container .content .m{
+ margin-bottom: 20px;
+ color: var(--four);
+ font-weight: 700;
+ font-family: 'Lexend Deca', sans-serif;
+}
+.order_container .content .music{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 40px;
+}
+.music .audio{
+    display: flex;
+    gap: 2rem;
+    
+}
+.music .audio .audio_sub .p{
+    margin-bottom: 10px;
+    font-family:'Inter', sans-serif ;
+}
+.music .audio .audio_sub .q{
+    color:var(--four);
+    font-family:'Inter', sans-serif ;
+
+}
+.music a{
+    color: var(--second);
+    font-family:'Inter', sans-serif ;
+
+}
+.content .proceed{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.content .proceed {
+    text-decoration: none;
+    color: var(--thrid);
+    background: var(--second);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.proceed a{
+    color: white;
+    text-decoration: none;
+}
+.content .pro{
+  
+    width: 100%;
+}
+ .pro a {
+    text-decoration: none;
+    color: var(--four);
+  
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+    background:url(pattern-background-mobile.svg),var(--first);
+    background-repeat: no-repeat;
+  
+    }
+   .order .order_container{
+        width: 350px;
+    }
+.order_container .image img{
+    width: 320px;
+}
+.music a{
+    margin-left: 40px;
+}
+}
